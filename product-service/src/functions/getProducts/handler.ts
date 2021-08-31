@@ -4,11 +4,12 @@ import type { ValidatedEventAPIGatewayProxyEvent } from '@libs/apiGateway';
 import { formatJSONResponse } from '@libs/apiGateway';
 import { middyfy } from '@libs/lambda';
 
+import { products } from '../../data/products';
 import schema from './schema';
 
 const getProducts: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async () => {
   return formatJSONResponse({
-    goods: '[1, 3, 82]',
+    goods: products,
   });
 }
 
