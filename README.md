@@ -29,4 +29,4 @@ Example result:
     }
 }
 
-FE part in progress).
+FE part: https://github.com/EPAM-JS-Competency-center/shop-react-redux-cloudfront/pull/66
